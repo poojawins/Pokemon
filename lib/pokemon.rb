@@ -1,5 +1,4 @@
 class Bellossom
-  
   attr_accessor :level, :type, :abilities, :catch_rate, :entry, :hp, :exp
   LEARNSET = { "Leaf Storm" => 5,
                "Sunny Day" => 5,
