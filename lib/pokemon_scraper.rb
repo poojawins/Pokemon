@@ -11,7 +11,11 @@ class Scraper
   end
 
   def pokemon_name
-    html.search("").text
+    html.search("") { |pokemon| pokemon.text }
   end
 
 end
+
+pokemon_scrape = Scraper.new("http://bulbapedia.bulbagarden.net/wiki/Miltank_(Pok%C3%A9mon)")
+puts pokemon_scrape.pokemon_name
+
